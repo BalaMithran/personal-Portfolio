@@ -1,43 +1,33 @@
 html {
   scroll-behavior: smooth;
 }
-/* header starts */
-body {
-  font-family: Helvetica;
-  margin: 0;
+:root {
+  --deg: 0.0;
 }
-a {
-  text-decoration: none;
-  color: #000;
-}
-.site-header { 
-  border-bottom: 1px solid #ccc;
-  padding: .5em 1em;
+.wrapper {
+  background-color: rgba(93, 141, 230, var(--deg));
+  width:100%;
+  position:fixed;
+  z-index:10;
+  border-bottom-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
 }
 
-.site-header::after {
-  content: "";
-  display: table;
-  clear: both;
+.bottom-wrapper {
+  width:100%;
+  padding-top:92px;
+  z-index:5;
+  overflow:auto;
 }
 
-.site-identity {
-  float: left;
-}
 
-.site-identity h1 {
-  font-size: 1.5em;
-  margin: .7em 0 .3em 0;
-  display: inline-block;
-}
-
-.site-identity img {
-  max-width: 55px;
-  float: left;
-  margin: 0 10px 0 0;
-}
+/* #test{
+  font-size: var(--deg);
+} */
 
 .site-navigation {
+  position: sticky;
+  top: 0;
   float: right;
 }
 
@@ -51,35 +41,36 @@ a {
   margin: 1.4em 1em 1em 1em;
 }
 
-/* header ends */
 
 
-
-/* body style starts */
-body {
- 
-  font-family: 'Quicksand', serif;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0;
-  padding: 1rem;
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
 
 h1 {
     font-size: 24px;
     font-weight: 400;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
 body {
   font-family: Helvetica;
   margin: 0;
@@ -177,12 +168,13 @@ h3{
    font-family: "BentonSans",Arial,Helvetica,sans-serif;
 }
 
-#body {
- background-image: url("../../../../assets/wallpaper/fabio-bracht-_z0DiiaIhB4-unsplash.jpg");
- background-color: #cccccc;
+#mainpage {
+  margin-top: -100px;
+ height: 660px;
+ background-image: url("./src/ironman.webp");
+ background-size: cover;
+ background-repeat: no-repeat;
  
- height: 400px;
- height: 90%;
 }
 #h2{
   background: transparent;
@@ -322,36 +314,7 @@ p{
   opacity: 1;
   right: 0;
 }
-/* 
-.theme button {
-  align-self: flex-end;.
-  font-size: 24px;
-  font-weight: 400;
-  padding: 8px 16px;
-  background: #fff
-  border-radius: 100px;
-  border: 2px solid #0E1D2F;
-}
 
-
-.dark {
-  background: linear-gradient (236.85deg, #375B86 27.26%, #6B87A9 96.03%)
-}
-
-.dark .container {
-  background: #333439;
-  color: #F6F6F6;
-}
-
-.dark .projects {
-  color: #1C1C1C;
-}
-
-.dark .theme button {
-  background: #1C1C1C;
-  color: #fff;
-  border: 2px solid #F7F7F7;
-} */
 
 
 section {
@@ -377,8 +340,8 @@ section p {
 }
 
 .project-tile {
-  margin: 24px;
-  max-width: 450px;
+  margin: 5px;
+  max-width: 300px;
   text-decoration: none;
   transition: transform 0.3s ease;
 }
@@ -515,6 +478,24 @@ body {
 
 
 
+.box {
+  background-color: coral;
+ 
+  display:inline-block;
+  
+  border-radius:5px;
+}
+.text {
+  padding: 10px 0;
+  color:white;
+  font-weight:bold;
+  text-align:center;
+}
+#container {
+  white-space:nowrap;
+  text-align:center;
+}
+
 /* dropdown button in header start */
 
 
@@ -532,15 +513,28 @@ body {
     font-size: 36px;
     line-height: 28px;
 }
-#containerIntro h1 {
+#containerIntro h1  , #heading{
     background: transparent;
-    padding-top: 14%;
-    font-size: 300%;
+    
+    font-size: 900%;
     text-align: left;
-    font-family: "BentonSans",Arial,Helvetica,sans-serif;
+    font-family: Snell Roundhand;
     padding-left: 5%;
-    display: inline;
     vertical-align: top;
-    font-size: 36px;
+    font-size: 80px;
     line-height: 28px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
